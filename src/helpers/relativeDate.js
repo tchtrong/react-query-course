@@ -13,7 +13,7 @@ export function relativeDate(date) {
     return "a minute ago";
   } else if (delta < hour) {
     return Math.floor(delta / minute) + " minutes ago";
-  } else if (Math.floor(delta / hour) == 1) {
+  } else if (Math.floor(delta / hour) === 1) {
     return "1 hour ago";
   } else if (delta < day) {
     return Math.floor(delta / hour) + " hours ago";
